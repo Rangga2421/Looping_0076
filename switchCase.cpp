@@ -17,6 +17,27 @@ void input(){
     cin >> kodeJurusan;
 }
 
+//Prosedur untuk pengecekan kondisi
+void pilihanJurusan() {
+    switch (kodeJurusan) {
+        case 1:
+            namaJurusan = "TEKNOLOGI INFORMASI";
+            statusKuota = "Tersedia (15 Kursi)";
+            break;
+        case 2:
+            namaJurusan = "TEKNIK ELEKTRO";
+            statusKuota = "Kuota Penuh!";
+            break;
+        case 3:
+            namaJurusan = "SISTEM INFORMASI";
+            statusKuota = "Tersedia (5 Kursi)";
+            break;
+        default:
+            namaJurusan = "Tidak Diketahui";
+            statusKuota = "Error: Kode Tidak Valid!";
+    }
+}
+
 int main(){
 
     return 0;
